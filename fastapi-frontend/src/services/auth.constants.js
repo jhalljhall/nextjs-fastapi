@@ -4,3 +4,5 @@ export const REGISTER_ENDPOINT = "users/register/"
 export const REFRESH_ENDPOINT = "token/refresh/"
 export const GET_DATA_ENDPOINT = "data/"
 export const SEND_DATA_ENDPOINT = "data/"
+
+export const SCAN_IMG_ENDPOINT = "scan/"
