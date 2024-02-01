@@ -47,6 +47,23 @@ import {
           return error.response;
         }
     }
+
+    async scanImage(params){
+      try {
+        const response = await request({
+          url: API_URL + SCAN_IMG_ENDPOINT,
+          method: 'POST',
+          data: params.data,
+          headers: params.headers
+        });
+  
+        if (response) {
+          return response;
+        }
+      } catch (error) {
+        return error.response;
+      }
+    }
   
     
   }
